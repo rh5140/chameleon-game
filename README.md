@@ -20,3 +20,4 @@ Catch a certain number of bugs within the time limit to finish the level! You wi
 - [ ] Draw!!!!!
 - [ ] Music and SFX
 - [ ] Audio options
+- [ ] Remove unnecessary stuff from repo....
