@@ -6,7 +6,7 @@ Catch a certain number of bugs within the time limit to finish the level! You wi
 
 ## To-do
 - [x] Projectile returns to original position upon reaching clicked point
-- [ ] Projectile returns to original position upon collision
+- [x] Projectile returns to original position upon collision
 - [ ] Spawn in bugs to be caught
 - [ ] Keep track of bugs caught
 - [ ] Timer
