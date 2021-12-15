@@ -108,6 +108,7 @@ public class Projectile : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         GameObject collided = col.gameObject;
+        // Prevent multiple bugs from getting caught in the same shot
         if (!collidedWithBug)
         {
             if (collided.tag == "Enemy")

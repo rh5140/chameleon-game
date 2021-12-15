@@ -15,6 +15,7 @@ Conservation of tasks: Each time I complete a task, I realize there is one I for
 - [ ] Powerups for tongue strength (idea from Ming)
 #### Bugs
 - [x] Spawn in bugs to be caught
+- [ ] Deactivate bugs upon exiting screen
 - [ ] Keep track of bugs caught
 - [ ] More interesting bug movement
 - [ ] Attach bugs to tongue upon collision

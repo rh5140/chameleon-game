@@ -8,7 +8,7 @@ public class Bug : MonoBehaviour
     void OnEnable()
     {
         // Spawn at a random height
-        transform.position = new Vector3(12, Random.Range(-4,4), 0);
+        transform.position = new Vector3(12, Random.Range(-4f,4f), 0);
     }
 
     // Update is called once per frame
