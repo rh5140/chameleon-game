@@ -8,14 +8,14 @@ public class Bug : MonoBehaviour
     void OnEnable()
     {
         // Spawn at a random height
-        transform.position = new Vector3(8, Random.Range(-4,4), 0);
+        transform.position = new Vector3(12, Random.Range(-4,4), 0);
     }
 
     // Update is called once per frame
     void Update()
     {
         // Just move to the left
-        transform.position += new Vector3(-0.001f, 0.0f, 0.0f);
+        transform.position += new Vector3(-0.005f, 0.0f, 0.0f);
     }
     // void OnCollisionEnter2D(Collision2D col)
     // {

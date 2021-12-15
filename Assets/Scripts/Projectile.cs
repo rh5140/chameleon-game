@@ -104,13 +104,17 @@ public class Projectile : MonoBehaviour
         yield return null;
     }
 
+    // Bugs might be overlapped if they're not disappearing first hit...
     void OnCollisionEnter2D(Collision2D col)
     {
         GameObject collided = col.gameObject;
-        collidedWithBug = true;
-        if (collided.tag == "Enemy")
+        if (!collidedWithBug)
         {
-            collided.SetActive(false);
+            if (collided.tag == "Enemy")
+            {
+                collided.SetActive(false);
+            }
+            collidedWithBug = true;
         }
     }
 }
