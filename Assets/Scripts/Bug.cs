@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Bug : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // DO NOT use Start since that's for when the object is first instantiated
+    // OnEnable since object gets enabled/disabeled
     void OnEnable()
     {
         // Spawn at a random height
