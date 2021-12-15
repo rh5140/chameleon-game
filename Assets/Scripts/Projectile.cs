@@ -45,7 +45,10 @@ public class Projectile : MonoBehaviour
             player.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         }
 
+        // Stop tongue projectile
         GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        // transform.position = new Vector3(-4, 0, 0);
+
         if (Input.GetMouseButtonDown(0))
         {
             // Snapshot cursor position for target
@@ -63,17 +66,6 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        Debug.Log("Pre collision collidedWithBugValue = " + collidedWithBug);
-
-        collidedWithBug = true;
-
-        Destroy(col.gameObject);
-
-        Debug.Log("Post collision collidedWithBugValue = " + collidedWithBug);
-
-    }
     IEnumerator Tongue(Vector2 direction, float rotationZ)
     {
         tongueOut = true;
@@ -110,5 +102,15 @@ public class Projectile : MonoBehaviour
         collidedWithBug = false;
         tongueOut = false;
         yield return null;
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        GameObject collided = col.gameObject;
+        collidedWithBug = true;
+        if (collided.tag == "Enemy")
+        {
+            collided.SetActive(false);
+        }
     }
 }

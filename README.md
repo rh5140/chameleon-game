@@ -5,14 +5,14 @@ Play as Grabb, an insatiably hungry chameleon, and catch bugs to eat with your t
 Catch a certain number of bugs within the time limit to finish the level! You will be presented with a chameleon fact and that choice to proceed to the next level.
 
 ## To-do
-
+Conservation of tasks: Each time I complete a task, I realize there is one I forgot to account for and add it to the list...
 ### Programming
 #### Tongue
 - [x] Projectile returns to original position upon reaching clicked point
 - [x] Projectile returns to original position upon collision
 - [ ] Powerups for tongue strength (idea from Ming)
 #### Bugs
-- [ ] Spawn in bugs to be caught
+- [x] Spawn in bugs to be caught
 - [ ] Keep track of bugs caught
 - [ ] More interesting bug movement
 - [ ] Attach bugs to tongue upon collision
@@ -32,6 +32,7 @@ Catch a certain number of bugs within the time limit to finish the level! You wi
 - [ ] Draw chameleon w/ separated head and tongue
 - [ ] Draw bugs
 - [ ] Draw background
+- [ ] UI elements
 - [ ] Draw powerups
 - [ ] Chill background music
 - [ ] SFX for catching bug, slurping up bug, powerups

@@ -30,6 +30,6 @@ public class Spawner : MonoBehaviour
             bug.SetActive(true);
         }
         spawningNow = false;
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
     }
 }
