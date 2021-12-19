@@ -2,7 +2,7 @@
 // Thanks to RICHARD and MING for advice
 
 // TO DO:
-// Probably separate player movement
+// Probably separate player and cursor movement from this script...
 
 using System.Collections;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
     public GameObject camera;
     
     public bool tongueOut;
-    public float projectileSpeed = 20.0f;
+    [SerializeField] public float projectileSpeed;
 
     private Vector3 cursorPosition;
     private Vector3 startPosition;
@@ -49,7 +49,7 @@ public class Projectile : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         // transform.position = new Vector3(-4, 0, 0);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !tongueOut)
         {
             // Snapshot cursor position for target
             targetPosition = cursorPosition;
@@ -59,10 +59,8 @@ public class Projectile : MonoBehaviour
             duration = distance / projectileSpeed;
             Vector2 direction = difference / distance;
             direction.Normalize();
-            if (!tongueOut)
-            {
-                StartCoroutine(Tongue(direction, rotationZ));
-            }
+            // Start tongue shooting
+            StartCoroutine(Tongue(direction, rotationZ));
         }
     }
 
@@ -84,7 +82,6 @@ public class Projectile : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
-        
         // Get position again in case hit bug before click point
         targetPosition = transform.position;
         // Lerp back to spawn point
@@ -97,7 +94,9 @@ public class Projectile : MonoBehaviour
             transform.position = Vector3.Lerp(targetPosition, startPosition, time / duration);
             time += Time.deltaTime;
             yield return null;
-        }    
+        }
+        // Snap back to starting position    
+        transform.position = startPosition;
 
         collidedWithBug = false;
         tongueOut = false;

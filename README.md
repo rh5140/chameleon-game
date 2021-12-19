@@ -10,8 +10,8 @@ Conservation of tasks: Each time I complete a task, I realize there is one I for
 #### Tongue
 - [x] Projectile returns to original position upon reaching clicked point
 - [x] Projectile returns to original position upon collision
-- [ ] Either fix projectile position when not shooting or pool it (if this, remember `OnEnable()`)
-- [ ] BUG FIX: Projectile jumps to click if click happens right during/after collision
+- [x] Either fix projectile position when not shooting or pool it (if this, remember `OnEnable()`)
+- [x] BUG FIX: Projectile jumps to click if click happens right during/after collision
 - [ ] Powerups for tongue strength (idea from Ming)
 #### Bugs
 - [x] Spawn in bugs to be caught
