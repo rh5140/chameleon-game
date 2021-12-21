@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
     public GameObject camera;
     
     public bool tongueOut;
-    [SerializeField] public float projectileSpeed;
+    public float projectileSpeed = 20f;
 
     private Vector3 cursorPosition;
     private Vector3 startPosition;
@@ -51,8 +51,10 @@ public class Projectile : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !tongueOut)
         {
+            Debug.Log("CLICKED!");
             // Snapshot cursor position for target
             targetPosition = cursorPosition;
+            Debug.Log(cursorPosition);
             difference = targetPosition - player.transform.position;
             distance = difference.magnitude;
             // time = distance / rate
@@ -66,7 +68,9 @@ public class Projectile : MonoBehaviour
 
     IEnumerator Tongue(Vector2 direction, float rotationZ)
     {
+        Debug.Log("START COROUTINE");
         tongueOut = true;
+        Debug.Log("0");
 
         // TO DO: object pooling w/ this one tongue projectile
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
@@ -75,13 +79,19 @@ public class Projectile : MonoBehaviour
         startPosition = transform.position;
         float time = 0;
 
+        Debug.Log("1");
         // Lerp between spawn point and click point
+                    Debug.Log(duration);
+
         while (time < duration && !collidedWithBug)
         {
             transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
             time += Time.deltaTime;
+            Debug.Log("time: " + time);
             yield return null;
         }
+
+        Debug.Log("2");
         // Get position again in case hit bug before click point
         targetPosition = transform.position;
         // Lerp back to spawn point
@@ -89,6 +99,8 @@ public class Projectile : MonoBehaviour
         distance = difference.magnitude;
         duration = distance / projectileSpeed;
         time = 0;
+                Debug.Log("3");
+
         while (time < duration)
         {
             transform.position = Vector3.Lerp(targetPosition, startPosition, time / duration);
@@ -97,6 +109,7 @@ public class Projectile : MonoBehaviour
         }
         // Snap back to starting position    
         transform.position = startPosition;
+        Debug.Log("4");
 
         collidedWithBug = false;
         tongueOut = false;
