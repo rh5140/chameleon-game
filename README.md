@@ -10,8 +10,10 @@ Conservation of tasks: Each time I complete a task, I realize there is one I for
 #### Tongue
 - [x] Projectile returns to original position upon reaching clicked point
 - [x] Projectile returns to original position upon collision
-- [x] Either fix projectile position when not shooting or pool it (if this, remember `OnEnable()`)
+- [x] ~~Either~~ fix projectile position when not shooting ~~or pool it (if this, remember `OnEnable()`)~~
 - [x] BUG FIX: Projectile jumps to click if click happens right during/after collision
+- [ ] Pretty serious issue: since projectile stays in scene, it still interacts w/ the bugs that touch it even if it doesn't launch. Result of poorly organized code that it's not trivial for me to figure out how to fix. Feature, not a bug?? Who can blame the chameleon for eating a bug that flies straight into its mouth??
+- [x] Use a LineRenderer (thanks Athena!)
 - [ ] Powerups for tongue strength (idea from Ming)
 #### Bugs
 - [x] Spawn in bugs to be caught
