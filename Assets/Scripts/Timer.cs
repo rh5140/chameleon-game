@@ -12,6 +12,8 @@ public class Timer : MonoBehaviour
     public bool timerIsRunning = false;
     public TextMeshProUGUI timeText;
 
+    public GameOverScreen GameOverScreen;
+
     private void Start()
     {
         // Starts the timer automatically
@@ -32,6 +34,8 @@ public class Timer : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                Time.timeScale = 0;
+                GameOver();
             }
         }
     }
@@ -44,5 +48,10 @@ public class Timer : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
         timeText.text = "Time remaining: " + string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void GameOver()
+    {
+        GameOverScreen.Setup();
     }
 }
