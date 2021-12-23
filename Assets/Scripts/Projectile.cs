@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
     public GameObject scorekeeper;
     
     private bool tongueOut;
-    private float projectileSpeed = 20f;
+    private float projectileSpeed = 30f;
 
     private Vector3 cursorPosition;
     private Vector3 startPosition;
@@ -114,10 +114,23 @@ public class Projectile : MonoBehaviour
         {
             if (collided.tag == "Enemy")
             {
-                collided.SetActive(false);
+                // Reparent so they move together
+                collided.transform.SetParent(this.transform);
+                // After delay
+                StartCoroutine(Swallow(duration, collided));
+                // collided.SetActive(false);
+                // collided.transform.SetParent(null);
             }
-            scorekeeper.GetComponent<Scorekeeper>().UpdateScore(1);
             collidedWithBug = true;
         }
+    }
+
+    IEnumerator Swallow(float duration, GameObject yum)
+    {
+        // yield return new WaitForSeconds(duration);
+        yield return new WaitForSeconds(duration);
+        yum.transform.SetParent(null);
+        yum.SetActive(false);
+        scorekeeper.GetComponent<Scorekeeper>().UpdateScore(1);
     }
 }

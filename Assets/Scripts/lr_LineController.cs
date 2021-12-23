@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class lr_LineController : MonoBehaviour
 {
+    // https://docs.unity3d.com/ScriptReference/LineRenderer-numCornerVertices.html
+    // Rounded ends?
     private LineRenderer lr;
     private Transform[] points;
 
