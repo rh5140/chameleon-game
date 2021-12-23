@@ -16,7 +16,7 @@ public class Bug : MonoBehaviour
     void Update()
     {
         // Just move to the left
-        transform.position += new Vector3(-0.005f, 0.0f, 0.0f);
+        transform.position += new Vector3(-0.01f, 0.0f, 0.0f);
     }
     // void OnCollisionEnter2D(Collision2D col)
     // {

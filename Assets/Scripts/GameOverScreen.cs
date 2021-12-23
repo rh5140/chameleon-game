@@ -12,11 +12,13 @@ public class GameOverScreen : MonoBehaviour
 
     public void RestartButton()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Game");
     }
 
     public void ExitButton()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Main Menu");
     }
 }
