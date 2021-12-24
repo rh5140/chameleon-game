@@ -115,6 +115,7 @@ public class Projectile : MonoBehaviour
             if (collided.tag == "Enemy")
             {
                 // Reparent so they move together
+                collided.GetComponent<Bug>().Caught();
                 collided.transform.SetParent(this.transform);
                 // After delay
                 StartCoroutine(Swallow(duration, collided));

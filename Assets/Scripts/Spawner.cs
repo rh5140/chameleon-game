@@ -24,12 +24,12 @@ public class Spawner : MonoBehaviour
     IEnumerator Spawn()
     {
         spawningNow = true;
+        yield return new WaitForSeconds(0.2f);
         GameObject bug = ObjectPool.SharedInstance.GetPooledObject();
         if (bug != null)
         {
             bug.SetActive(true);
         }
         spawningNow = false;
-        yield return new WaitForSeconds(1.0f);
     }
 }
