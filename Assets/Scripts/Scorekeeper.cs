@@ -10,6 +10,8 @@ public class Scorekeeper : MonoBehaviour
     private int total;
     public TextMeshProUGUI scoreText;
 
+    public VictoryScreen VictoryScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +22,20 @@ public class Scorekeeper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (score == total)
+        {
+            Victory();
+        }
     }
 
     public void UpdateScore(int scoreChange)
     {
         score += scoreChange;
-        scoreText.text = score + " of " + total + " left to catch";
+        scoreText.text = score + " of " + total + " caught";
+    }
+
+    public void Victory()
+    {
+        VictoryScreen.Setup();
     }
 }
