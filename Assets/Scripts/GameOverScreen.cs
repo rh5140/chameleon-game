@@ -7,6 +7,7 @@ public class GameOverScreen : MonoBehaviour
 {
     public void Setup()
     {
+        Debug.Log("RIP");
         gameObject.SetActive(true);
         Time.timeScale = 0;
     }

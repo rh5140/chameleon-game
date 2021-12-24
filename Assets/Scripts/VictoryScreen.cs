@@ -7,6 +7,7 @@ public class VictoryScreen : MonoBehaviour
 {
     public void Setup()
     {
+        Debug.Log("VICTORY!");
         gameObject.SetActive(true);
         Time.timeScale = 0;
     }

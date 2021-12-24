@@ -6,26 +6,32 @@ using TMPro;
 
 public class Scorekeeper : MonoBehaviour
 {
-    private int score;
-    private int total;
     public TextMeshProUGUI scoreText;
-
     public VictoryScreen VictoryScreen;
+    [SerializeField] public int total;
+
+    private int score;
+    private bool isPlaying = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        total = 10;
+        isPlaying = true;
         score = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (score == total)
+        if (isPlaying)
         {
-            Victory();
+            if (score == total)
+            {
+                isPlaying = false;
+                Victory();
+            }
         }
+        
     }
 
     public void UpdateScore(int scoreChange)
