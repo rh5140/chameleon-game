@@ -15,6 +15,7 @@ public class Projectile : MonoBehaviour
     public GameObject camera;
     public GameObject scorekeeper;
     
+    [SerializeField] public bool cursorVisibility;
     private bool tongueOut;
     private float projectileSpeed = 30f;
 
@@ -31,7 +32,7 @@ public class Projectile : MonoBehaviour
         collidedWithBug = false;
         tongueOut = false;
         startPosition = transform.position;
-        Cursor.visible = false;
+        Cursor.visible = cursorVisibility;
     }
 
     void Update()
