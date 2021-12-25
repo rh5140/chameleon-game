@@ -7,6 +7,7 @@ public class GameEnd : MonoBehaviour
 {
     public void Setup()
     {
+        Cursor.visible = true;
         gameObject.SetActive(true);
         Time.timeScale = 0;
     }

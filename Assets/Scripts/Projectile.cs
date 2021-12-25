@@ -31,6 +31,7 @@ public class Projectile : MonoBehaviour
         collidedWithBug = false;
         tongueOut = false;
         startPosition = transform.position;
+        Cursor.visible = false;
     }
 
     void Update()
