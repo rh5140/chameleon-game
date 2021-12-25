@@ -30,6 +30,7 @@ public class Projectile : MonoBehaviour
     {
         collidedWithBug = false;
         tongueOut = false;
+        startPosition = transform.position;
     }
 
     void Update()
@@ -72,7 +73,7 @@ public class Projectile : MonoBehaviour
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
 
-        startPosition = transform.position;
+        // startPosition = transform.position;
         float time = 0;
 
         // Lerp between spawn point and click point
