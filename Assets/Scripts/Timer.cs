@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     public bool timerIsRunning = false;
     public TextMeshProUGUI timeText;
 
-    public GameOverScreen GameOverScreen;
+    public GameEnd GameOverScreen;
 
     private void Start()
     {

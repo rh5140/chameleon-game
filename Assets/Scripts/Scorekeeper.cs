@@ -7,7 +7,7 @@ using TMPro;
 public class Scorekeeper : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-    public VictoryScreen VictoryScreen;
+    public GameEnd VictoryScreen;
     [SerializeField] public int total;
 
     private int score;

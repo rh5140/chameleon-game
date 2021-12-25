@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef1e8b94fa7d1c41870edf4a2072a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 10
+  timeRemaining: 1
   timerIsRunning: 0
   timeText: {fileID: 893784782}
   GameOverScreen: {fileID: 1729093002}
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 354986061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cce7e2b3c56e8fa439956c3947b5c65d, type: 3}
+  m_Script: {fileID: 11500000, guid: c33801edb12d59149ab58c1b9e510961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!225 &354986064
@@ -1260,7 +1260,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 354986063}
-        m_TargetAssemblyTypeName: VictoryScreen, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameEnd, Assembly-CSharp
         m_MethodName: RestartButton
         m_Mode: 1
         m_Arguments:
@@ -2325,7 +2325,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1729093002}
-        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameEnd, Assembly-CSharp
         m_MethodName: ExitButton
         m_Mode: 1
         m_Arguments:
@@ -2531,8 +2531,8 @@ GameObject:
   - component: {fileID: 1729092999}
   - component: {fileID: 1729093001}
   - component: {fileID: 1729093000}
-  - component: {fileID: 1729093002}
   - component: {fileID: 1729093003}
+  - component: {fileID: 1729093002}
   m_Layer: 5
   m_Name: GameOverBG
   m_TagString: Untagged
@@ -2609,7 +2609,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1729092998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f151cb62ef2236a4582112c84585ff36, type: 3}
+  m_Script: {fileID: 11500000, guid: c33801edb12d59149ab58c1b9e510961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!225 &1729093003
@@ -2709,7 +2709,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1729093002}
-        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameEnd, Assembly-CSharp
         m_MethodName: RestartButton
         m_Mode: 1
         m_Arguments:
@@ -3001,7 +3001,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 354986063}
-        m_TargetAssemblyTypeName: VictoryScreen, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameEnd, Assembly-CSharp
         m_MethodName: ExitButton
         m_Mode: 1
         m_Arguments:
