@@ -10,10 +10,12 @@ public class lr_LineController : MonoBehaviour
     // Rounded ends?
     private LineRenderer lr;
     private Transform[] points;
+    private int numCapVertices = 32;
 
     private void Awake()
     {
         lr = GetComponent<LineRenderer>();
+        lr.numCapVertices = numCapVertices;
     }
 
     public void SetUpLine(Transform[] points)

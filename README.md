@@ -28,17 +28,17 @@ Conservation of tasks: Each time I complete a task, I realize there is one I for
 - [x] Random chameleon fact upon level completion
 #### Menus and options
 - [ ] Main menu
-- [ ] Pause menu
-- [ ] Audio options
+- [ ] ~~Pause menu~~
+- [ ] ~~Audio options~~
 #### Cleanup
 - [x] Remove unnecessary stuff from repo since I initially forgot the gitignore....
 
 ### Art and Music
-- [ ] Draw chameleon w/ separated head and tongue
-- [ ] Draw bugs
-- [ ] Draw background
-- [ ] UI elements
+- [x] Draw chameleon w/ separated head and tongue
+- [x] Draw bugs
+- [x] Draw background
+- [x] UI elements
 - [ ] ~~Draw powerups~~
 - [ ] Chill background music
 - [ ] SFX for catching bug, slurping up bug, ~~powerups~~
-- [ ] Animation............
+- [x] Animation............
