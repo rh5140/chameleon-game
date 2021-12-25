@@ -18,6 +18,7 @@ public class Scorekeeper : MonoBehaviour
     {
         isPlaying = true;
         score = 0;
+        scoreText.text = score + " of " + total + " caught";
     }
 
     // Update is called once per frame
