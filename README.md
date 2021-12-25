@@ -14,18 +14,18 @@ Conservation of tasks: Each time I complete a task, I realize there is one I for
 - [x] BUG FIX: Projectile jumps to click if click happens right during/after collision
 - [ ] Pretty serious issue: since projectile stays in scene, it still interacts w/ the bugs that touch it even if it doesn't launch. Result of poorly organized code that it's not trivial for me to figure out how to fix. Feature, not a bug?? Who can blame the chameleon for eating a bug that flies straight into its mouth??
 - [x] Use a LineRenderer (thanks Athena!)
-- [ ] Powerups for tongue strength (idea from Ming)
+- [ ] ~~Powerups for tongue strength (idea from Ming)~~ too RNG-based for this to make sense
 #### Bugs
 - [x] Spawn in bugs to be caught
 - [x] Deactivate bugs upon exiting screen
-- [ ] Keep track of bugs caught
-- [ ] More interesting bug movement
-- [ ] Attach bugs to tongue upon collision
+- [x] Keep track of bugs caught
+- [x] More interesting bug movement
+- [x] Attach bugs to tongue upon collision
 #### Levels
-- [ ] Timer
-- [ ] Proceed to different levels
-- [ ] Change parameters for further levels
-- [ ] Random chameleon fact upon level completion
+- [x] Timer
+- [ ] ~~Proceed to different levels~~ this game is too RNG-based for scaling difficulty to make sense :()
+- [ ] ~~Change parameters for further levels~~
+- [x] Random chameleon fact upon level completion
 #### Menus and options
 - [ ] Main menu
 - [ ] Pause menu
@@ -38,7 +38,7 @@ Conservation of tasks: Each time I complete a task, I realize there is one I for
 - [ ] Draw bugs
 - [ ] Draw background
 - [ ] UI elements
-- [ ] Draw powerups
+- [ ] ~~Draw powerups~~
 - [ ] Chill background music
-- [ ] SFX for catching bug, slurping up bug, powerups
+- [ ] SFX for catching bug, slurping up bug, ~~powerups~~
 - [ ] Animation............

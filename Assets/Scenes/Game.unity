@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef1e8b94fa7d1c41870edf4a2072a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 1
+  timeRemaining: 60
   timerIsRunning: 0
   timeText: {fileID: 893784782}
   GameOverScreen: {fileID: 1729093002}
@@ -2105,7 +2105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1417887874}
   VictoryScreen: {fileID: 354986063}
-  total: 1
+  total: 45
 --- !u!1 &1417887872
 GameObject:
   m_ObjectHideFlags: 0
