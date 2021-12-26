@@ -1,5 +1,5 @@
 # Grabb Grab Grub
-Play as Grabb, an insatiably hungry chameleon, and catch bugs to eat with your tongue!
+Play as Grabb, an insatiably hungry chameleon, and catch bugs to eat with your tongue! Play in your browser [here](https://raddishradish.itch.io/grabb-grab-grub).
 
 ## Overview
 Catch a certain number of bugs within the time limit to finish the level! You will be presented with a chameleon fact and that choice to proceed to the next level.
