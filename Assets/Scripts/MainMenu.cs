@@ -11,9 +11,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    public void ExitButton()
+    public void CreditsButton()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Credits");
     }
 }

@@ -4,7 +4,12 @@ Play as Grabb, an insatiably hungry chameleon, and catch bugs to eat with your t
 ## Overview
 Catch a certain number of bugs within the time limit to finish the level! You will be presented with a chameleon fact and that choice to proceed to the next level.
 
-## To-do
+## Status
+Technically complete! I got tired of working on it :')
+
+Some things I may potentially add in the future are audio options, difficulty slider, and a pause menu. I am not super satisfied with the music, but it is what it is. Also, the buttons in the main menu block the tongue :(
+
+## To-do (for v1.0)
 Conservation of tasks: Each time I complete a task, I realize there is one I forgot to account for and add it to the list...
 ### Programming
 #### Tongue
@@ -27,7 +32,7 @@ Conservation of tasks: Each time I complete a task, I realize there is one I for
 - [ ] ~~Change parameters for further levels~~
 - [x] Random chameleon fact upon level completion
 #### Menus and options
-- [ ] Main menu
+- [x] Main menu
 - [ ] ~~Pause menu~~
 - [ ] ~~Audio options~~
 #### Cleanup
@@ -39,6 +44,6 @@ Conservation of tasks: Each time I complete a task, I realize there is one I for
 - [x] Draw background
 - [x] UI elements
 - [ ] ~~Draw powerups~~
-- [ ] Chill background music
-- [ ] SFX for catching bug, slurping up bug, ~~powerups~~
+- [x] ~~Chill!! background music
+- [x] SFX for catching bug, slurping up bug, ~~powerups~~
 - [x] Animation............
