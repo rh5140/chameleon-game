@@ -8,6 +8,7 @@ public class Scorekeeper : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public GameEnd VictoryScreen;
+    public AudioSource music;
     [SerializeField] public int total;
 
     private int score;
@@ -19,6 +20,7 @@ public class Scorekeeper : MonoBehaviour
         isPlaying = true;
         score = 0;
         scoreText.text = score + " of " + total + " caught";
+        music.Play();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class Scorekeeper : MonoBehaviour
         {
             if (score == total)
             {
+                music.Stop();
                 isPlaying = false;
                 Victory();
             }

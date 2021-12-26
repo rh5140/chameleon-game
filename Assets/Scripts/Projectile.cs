@@ -14,10 +14,11 @@ public class Projectile : MonoBehaviour
     public GameObject crosshairs;
     public GameObject camera;
     public GameObject scorekeeper;
+    public AudioSource slurpSFX;
     
     [SerializeField] public bool cursorVisibility;
     private bool tongueOut;
-    private float projectileSpeed = 30f;
+    private float projectileSpeed = 37.5f;
 
     private Vector3 cursorPosition;
     private Vector3 startPosition;
@@ -70,6 +71,7 @@ public class Projectile : MonoBehaviour
     IEnumerator Tongue(Vector2 direction, float rotationZ)
     {
         tongueOut = true;
+        slurpSFX.Play();
 
         // TO DO: object pooling w/ this one tongue projectile
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
