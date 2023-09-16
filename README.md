@@ -1,5 +1,5 @@
 # Grabb Grab Grub
-An aim-and-shoot game developed solo in about two weeks over winter break 2021. Play the game in your browser on [itch.io](https://raddishradish.itch.io/grabb-grab-grub)!
+An aim-and-shoot game developed solo in about two weeks over winter break 2021. Play the game in your browser on [itch.io](https://raddishradish.itch.io/grabb-grab-grub)! Runner up in [2022 "Science is Art" Competition](https://intersectionsinscience.wordpress.com/gallery/science-is-art-2022-collection/) held by UCLA Science Libraries.
 
 Since I had only worked on games in teams before and primarily on art, I challenged myself to solo making a game so I could familiarize myself with game development more holistically. I prototyped and implemented game mechanics and a text parser in C#, illustrated in Adobe Photoshop, and composed [main menu](https://musescore.com/user/39562343/scores/7325780/s/kd3eSL) and [background](https://musescore.com/user/39562343/scores/7325804/s/s3T9Qs) music in MuseScore.
 
